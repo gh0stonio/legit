@@ -2,14 +2,28 @@
   "name": "legit",
   "version": "1.0.0",
   "description": "A light and smart git client",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
-    "start": "electron app.js"
+    "start": "cross-env NODE_ENV=production electron ./",
+    "start-hot": "cross-env HOT=1 NODE_ENV=development electron -r babel-register ./"
   },
   "author": "gh0stonio",
   "license": "ISC",
   "devDependencies": {
-    "semistandard": "^8.x.x",
-    "electron-prebuilt": "^1.x.x"
+    "babel-core": "^6.7.6",
+    "babel-eslint": "^6.0.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-webpack-loaders": "^0.4.0",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "cross-env": "^1.0.7",
+    "electron-debug": "^1.0.0",
+    "electron-prebuilt": "^1.x.x",
+    "semistandard": "^8.x.x"
   }
 }
