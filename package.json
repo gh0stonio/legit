@@ -1,0 +1,15 @@
+{
+  "name": "legit",
+  "version": "1.0.0",
+  "description": "A light and smart git client",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "author": "gh0stonio",
+  "license": "ISC",
+  "devDependencies": {
+    "semistandard": "^8.x.x",
+    "electron-prebuilt": "^1.x.x"
+  }
+}
