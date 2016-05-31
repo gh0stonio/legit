@@ -1,2 +1,12 @@
+# App packaged
+dist
+release
+main.js
+main.js.map
+
+# Dependency directory
 node_modules
 npm-debug.log
+
+# OSX
+.DS_Store
