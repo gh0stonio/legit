@@ -1,8 +1,6 @@
 # App packaged
 dist
 release
-main.js
-main.js.map
 
 # Dependency directory
 node_modules
