@@ -3,7 +3,7 @@ import { app, BrowserWindow } from 'electron';
 let mainWindow = null;
 
 if (process.env.NODE_ENV === 'development') {
-  require('electron-debug')({showDevTools: true});
+  require('electron-debug')();
 }
 
 app.on('window-all-closed', () => {
@@ -27,4 +27,8 @@ app.on('ready', () => {
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
+
+  if (process.env.NODE_ENV === 'development') {
+    mainWindow.openDevTools();
+  }
 });
