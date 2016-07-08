@@ -1,1 +1,10 @@
+# App packaged
+dist
+release
+
+# Dependency directory
 node_modules
+npm-debug.log
+
+# OSX
+.DS_Store
