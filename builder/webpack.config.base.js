@@ -15,5 +15,8 @@ export default {
     path: path.join(__dirname, '..', 'dist'),
     filename: 'bundle.js',
     libraryTarget: 'commonjs2'
-  }
+  },
+  externals: [
+    'git-wrapper2-promise'
+  ]
 };

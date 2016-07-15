@@ -1,8 +1,8 @@
 import React from 'react';
-import Main from '../containers/Main';
+import Status from '../containers/Status';
 
 export default () => (
   <div>
-    <Main />
+    <Status />
   </div>
 );

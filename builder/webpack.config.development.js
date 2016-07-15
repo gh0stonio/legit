@@ -7,7 +7,7 @@ const config = {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'react-hot!babel'
+      loader: 'babel'
     }]
   },
   debug: true,

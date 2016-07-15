@@ -1,6 +1,4 @@
 import { combineReducers } from 'redux';
-import main from './main';
+import status from './status';
 
-export default combineReducers({
-  main
-});
+export default combineReducers({status});
